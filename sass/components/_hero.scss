@@ -1,0 +1,26 @@
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $hero-bg-color;
+    background: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    );
+  
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    @media screen and (max-width: 767px) {
+      max-width: $mobile;
+      min-height: 400px;
+      background-image: url("../images/hero/hero-mobile.jpg");
+  
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/hero/hero-mobile@2x.jpg");
+      }
+    }
+}
