@@ -320,4 +320,27 @@ img {
 .link {
   text-decoration: none;
 }
+
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 480px;
+    min-height: 400px;
+    background-image: url("../../images/hero/hero-bg-picture-mobile-1x.jpg/");
+  }
+}
+
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../images/hero/hero-bg-picture-mobile-2x.jpg");
+  }
+}
 /*# sourceMappingURL=main.css.map */
