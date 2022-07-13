@@ -311,14 +311,70 @@ img {
   }
 }
 
-.list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+ul,
+ol,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+ul,
+ol,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+img,
+a,
+b,
+small {
+  display: block;
 }
 
 .link {
   text-decoration: none;
+  color: inherit;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list {
+  list-style: none;
+}
+
+.header {
+  background-color: bisque;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .hero {
@@ -342,5 +398,65 @@ img {
   .hero {
     background-image: url("../../images/hero/hero-bg-picture-mobile-2x.jpg");
   }
+}
+
+.tours-list {
+  display: -ms-grid;
+  display: grid;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media screen and (min-width: 480px) {
+  .tours-list {
+    -ms-grid-rows: (288px)[12];
+        grid-template-rows: repeat(12, 288px);
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tours-list {
+    -ms-grid-rows: (440px)[6];
+        grid-template-rows: repeat(6, 440px);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .tours-list {
+    -ms-grid-rows: (404px)[4];
+        grid-template-rows: repeat(4, 404px);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.tours-card {
+  border-radius: 6px;
+  border: 1px solid #d9d9de;
+  overflow: hidden;
+}
+
+.tours-card__link {
+  padding-bottom: 16px;
+}
+
+.tours-card__img {
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+.tours-card__title {
+  padding-left: 19px;
+  padding-right: 19px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */

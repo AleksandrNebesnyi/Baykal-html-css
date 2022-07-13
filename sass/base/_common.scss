@@ -31,12 +31,60 @@ img {
   }
 }
 
-.list {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+ul,
+ol,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+ul,
+ol,
+li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-left: 0;
+}
+
+img,
+a,
+b,
+small {
+  display: block;
 }
 
 .link {
   text-decoration: none;
+  color: inherit;
+  transition: color $time $cubic;
+}
+
+.list {
+  list-style: none;
 }
