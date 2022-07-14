@@ -289,7 +289,7 @@ img {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
 }
 
 @media screen and (min-width: 480px) {
@@ -368,13 +368,42 @@ small {
 }
 
 .header {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(217, 217, 222, 0.3);
   background-color: bisque;
 }
 
-.header__container {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-text__container {
+  margin-left: 15px;
+}
+
+.header-text1 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.header-text2 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  color: #ffffff;
+}
+
+.header-modal-btn {
+  margin-left: auto;
 }
 
 .hero {
@@ -389,7 +418,7 @@ small {
 @media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
-    min-height: 400px;
+    min-height: 480px;
     background-image: url("../../images/hero/hero-bg-picture-mobile-1x.jpg/");
   }
 }
@@ -398,6 +427,18 @@ small {
   .hero {
     background-image: url("../../images/hero/hero-bg-picture-mobile-2x.jpg");
   }
+}
+
+.hero-title {
+  padding-top: 32px;
+  text-align: center;
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+  /* or 52px */
+  color: #FFFFFF;
 }
 
 .tours-list {
@@ -458,5 +499,57 @@ small {
   font-size: 16px;
   line-height: 1.19;
   color: #757575;
+}
+
+.footer {
+  background-color: #202020;
+}
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-menu_title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-title {
+  font-weight: 500;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.footer-copyright {
+  font-weight: 400;
+  line-height: 1.3;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.footer-bottom-link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */

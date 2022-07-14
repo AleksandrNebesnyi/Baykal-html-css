@@ -1,12 +1,8 @@
 .hero {
     margin-left: auto;
     margin-right: auto;
-    background-color: $hero-bg-color;
-    // background: linear-gradient(
-    //   to right,
-    //   rgba(47, 48, 58, 0.4),
-    //   rgba(47, 48, 58, 0.4)
-    // );
+    background-color:  #c4c4c4;
+   
   
     background-repeat: no-repeat;
     background-position: center;
@@ -14,7 +10,7 @@
   
     @media screen and (max-width: 767px) {
       max-width: $mobile;
-      min-height: 400px;
+      min-height: 480px;
       background-image: url("../../images/hero/hero-bg-picture-mobile-1x.jpg/");
   
       @media (min-device-pixel-ratio: 2),
@@ -23,4 +19,21 @@
         background-image: url("../../images/hero/hero-bg-picture-mobile-2x.jpg");
       }
     }
+}
+
+
+.hero-title{
+  padding-top: 32px;
+  text-align: center;
+
+
+  font-family: 'PT Serif';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 130%;
+/* or 52px */
+
+
+color: #FFFFFF;
 }
