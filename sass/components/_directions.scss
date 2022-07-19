@@ -1,0 +1,48 @@
+
+.directions{
+    margin-bottom: 85px;
+}
+
+
+.directions-titles{
+
+    padding-bottom: 26px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.32;
+  
+
+    text-align: center;
+
+    color: #000000
+}
+.directions-list{
+    display: grid;
+    gap: 26px;
+    @media screen and (min-width: $mobile) {
+        // grid-template-rows: repeat(12, 1fr);
+        grid-template-columns: repeat(1,  1fr);
+      }
+}
+
+
+
+.direction-img{
+    margin: 0 auto;
+}
+
+
+.directions__grid {
+    row-gap: 37px;
+  }
+  .direction-card__descriprion {
+    margin-top: 16px;
+
+    font-size: 16px;
+    line-height: 1.31;
+
+    text-align: center;
+
+   color: #333333;
+  }
+

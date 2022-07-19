@@ -36,14 +36,8 @@
         <p class="header-text1">Байкальский отдых</p>
         <p class="header-text2">Турагентство</p>
          </div>
-        <div class="header-modal-btn">
-        <a
-          lang="en"
-          href=" "
-          class="header__mobile-menu"
-          rel="noopener noreferrer nofollow"
-          target="_blank"
-        >
+        <div class="header-modal-btn js-open-menu" aria-expanded="false" >
+        <a class="header__mobile-menu " >
           <img
             src="./images/header/mobile-menu.svg"
             alt="header__mobile-menu"
@@ -53,8 +47,87 @@
        </div>
       </div>
     </div>
-
+    
     </header>
+    <div class="mobile-menu js-menu-container" >
+      <div class="container">
+        <button class="mobile-menu__btn js-close-menu" aria-expanded="true" >
+         <img src="./images/mobile-menu/button-close.svg" alt="button-close" width="12px" height="12px" >
+      
+      </button>
+        <h3 class="mobile-menu-title">Бронирование</h3>
+        <ul class="booking-list list">
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Отели и базы отдыха</a>
+          </li>
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Теплоходы и катера</a>
+          </li>
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Транспортные услуги</a>
+          </li>
+        </ul>
+
+        <h3 class="mobile-menu-title">Экскурсии</h3>
+        <ul class="booking-list list">
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Экскурсии и туры</a>
+          </li>
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Экстрим туры</a>
+          </li>
+
+          <h3 class="mobile-menu-title">Туры на Байкал</h3>
+          <ul class="booking-list list">
+            <li class="booking-item">
+              <a  class="booking-item__link link" href="http://">Туры Зима-Весна</a>
+            </li>
+            <li class="booking-item">
+              <a  class="booking-item__link link" href="http://">Туры Лето-Осень</a>
+            </li>
+            <li class="booking-item">
+              <a  class="booking-item__link link" href="http://">Туры охоты и рыбалки</a>
+           </li>          
+        </ul>
+
+        <h3 class="mobile-menu-title">О Байкале</h3>
+        <ul class="booking-list list">
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Карта Байкала</a>
+          </li>
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Достопримечательности</a>
+          </li>
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Полезная информация</a>
+         </li>          
+      </ul>
+      <h3 class="mobile-menu-title">О Нас</h3>
+        <ul class="booking-list list">
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Контакты</a>
+          </li>
+          <li class="booking-item">
+            <a  class="booking-item__link link" href="http://">Агентствам</a>
+          </li>
+                   
+      </ul>
+
+      <ul class="contacts-nav list">
+        
+        <li class="contacts-nav__item">
+          <img  src="./images/mobile-menu/telephone.svg" alt="telephone" class="contact-img">
+          <a   href="mailto:info@devstudio.com" class="contacts-nav__link link">info@devstudio.com</a>
+        </li>
+        <li class="contacts-nav__item">
+          <img src="./images/mobile-menu/mail.svg" alt="mail" class="contact-img">
+          <a href="tel:+380961111111" class="contacts-nav__link link" >+38-924-3-541-540</a>
+        </li>
+      </ul>
+
+
+      </div>
+    </div>
     <main>
        <!-- Hero -->
     <section class="hero">
@@ -67,7 +140,10 @@
         Туры по самому красивому месту.<br />Поехали с нами за новыми
         впечатлениями!
       </p>
-      <a class="hero__link-btn link" href="">Оставить заявку </a>
+      <div class="hero__link-btn-container">
+        <a class="hero__link-btn link-btn link-btn_uppercase link" href="">Оставить заявку </a>
+      </div>
+      
       <a
         lang="en"
         href=" "
@@ -85,23 +161,25 @@
       <div class="container">
       <ul class="tours-list">
         <li class="tour-card">
+          <div class="img-thumb">
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Турбазы-на-Байкале.jpg 1x,
-            ./images/tour/mobile/Турбазы-на-Байкале@2x.jpg 2x"
-            src="./images/tour/mobile/Турбазы-на-Байкале.jpg" alt="Турбазы на Байкале">
+            ./images/tour/Турбазы-на-Байкале.jpg 1x,
+            ./images/tour/Турбазы-на-Байкале@2x.jpg 2x"
+            src="./images/tour/Турбазы-на-Байкале.jpg" alt="Турбазы на Байкале" class="tours-card__img">
             <h3 class="tours-card__title">Турбазы на Байкале</h3>
 
           </a>
+        </div>
         </li>
         <li class="tour-card">
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Экскурсии-и-туры.jpg 1x,
-            ./images/tour/mobile/Экскурсии-и-туры.jpg@2x.jpg 2x"
-            src="./images/tour/mobile/Экскурсии-и-туры.jpg" alt="Турбазы на Байкале">
+            ./images/tour/Экскурсии-и-туры.jpg 1x,
+            ./images/tour/Экскурсии-и-туры.jpg@2x.jpg 2x"
+            src="./images/tour/Экскурсии-и-туры.jpg" alt="Экскурсии-и-туры" class="tours-card__img">
             <h3 class="tours-card__title">Экскурсии и туры</h3>
 
           </a>
@@ -110,9 +188,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Охота-и-рыбалка.jpg 1x,
-            ./images/tour/mobile/Охота-и-рыбалка.jpg@2x.jpg 2x"
-            src="./images/tour/mobile/Охота-и-рыбалка.jpg" alt="Турбазы на Байкале">
+            ./images/tour/Охота-и-рыбалка.jpg 1x,
+            ./images/tour/Охота-и-рыбалка.jpg@2x.jpg 2x"
+            src="./images/tour/Охота-и-рыбалка.jpg" alt="Охота-и-рыбалка" class="tours-card__img">
             <h3 class="tours-card__title">Охота и рыбалка</h3>
 
           </a>
@@ -121,9 +199,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Экстрим-туры.jpg 1x,
-            ./images/tour/mobile/Экстрим-туры@2x.jpg 2x"
-            src="./images/tour/mobile/Экстрим-туры.jpg" alt="Экстрим туры">
+            ./images/tour/Экстрим-туры.jpg 1x,
+            ./images/tour/Экстрим-туры@2x.jpg 2x"
+            src="./images/tour/Экстрим-туры.jpg" alt="Экстрим туры"  class="tours-card__img">
             <h3 class="tours-card__title">Экстрим туры</h3>
 
           </a>
@@ -132,9 +210,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Теплоходы,-яхты.jpg 1x,
-            ./images/tour/mobile/Теплоходы,-яхты@2x.jpg 2x"
-            src="./images/tour/mobile/Теплоходы,-яхты.jpg" alt="Теплоходы, яхты">
+            ./images/tour/Теплоходы-яхты.jpg 1x,
+            ./images/tour/Теплоходы-яхты@2x.jpg 2x"
+            src="./images/tour/Теплоходы-яхты.jpg" alt="Теплоходы, яхты"  class="tours-card__img">
             <h3 class="tours-card__title">Теплоходы, яхты</h3>
 
           </a>
@@ -143,9 +221,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Красоты-Байкала.jpg 1x,
-            ./images/tour/mobile/Красоты-Байкала@2x.jpg 2x"
-            src="./images/tour/mobile/Красоты-Байкала.jpg" alt="Красоты Байкала">
+            ./images/tour/Красоты-Байкала.jpg 1x,
+            ./images/tour/Красоты-Байкала@2x.jpg 2x"
+            src="./images/tour/Красоты-Байкала.jpg" alt="Красоты Байкала"  class="tours-card__img">
             <h3 class="tours-card__title">Красоты Байкала</h3>
 
           </a>
@@ -154,9 +232,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Гостиницы-в-Улан-Удэ.jpg 1x,
-            ./images/tour/mobile/Гостиницы-в-Улан-Удэ@2x@2x.jpg 2x"
-            src="./images/tour/mobile/Гостиницы-в-Улан-Удэ.jpg" alt="Гостиницы в Улан-Удэ">
+            ./images/tour/Гостиницы-в-Улан-Удэ.jpg 1x,
+            ./images/tour/Гостиницы-в-Улан-Удэ@2x@2x.jpg 2x"
+            src="./images/tour/Гостиницы-в-Улан-Удэ.jpg" alt="Гостиницы в Улан-Удэ"  class="tours-card__img">
             <h3 class="tours-card__title">Гостиницы в Улан-Удэ</h3>
 
           </a>
@@ -165,9 +243,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Транспорт.jpg 1x,
-            ./images/tour/mobile/Транспорт@2x.jpg 2x"
-            src="./images/tour/mobile/Транспорт.jpg" alt="Транспорт">
+            ./images/tour/Транспорт.jpg 1x,
+            ./images/tour/Транспорт@2x.jpg 2x"
+            src="./images/tour/Транспорт.jpg" alt="Транспорт"  class="tours-card__img">
             <h3 class="tours-card__title">Транспорт</h3>
 
           </a>
@@ -176,9 +254,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Деловой-туризм.jpg 1x,
-            ./images/tour/mobile/Деловой-туризм@2x.jpg 2x"
-            src="./images/tour/mobile/Деловой-туризм.jpg" alt="Деловой туризм">
+            ./images/tour/Деловой-туризм.jpg 1x,
+            ./images/tour/Деловой-туризм@2x.jpg 2x"
+            src="./images/tour/Деловой-туризм.jpg" alt="Деловой туризм"  class="tours-card__img">
             <h3 class="tours-card__title">Деловой туризм</h3>
 
           </a>
@@ -187,9 +265,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Круизы-по-Байкалу.jpg 1x,
-            ./images/tour/mobile/Круизы-по-Байкалу@2x.jpg 2x"
-            src="./images/tour/mobile/Круизы-по-Байкалу.jpg" alt="Круизы по Байкалу">
+            ./images/tour/Круизы-по-Байкалу.jpg 1x,
+            ./images/tour/Круизы-по-Байкалу@2x.jpg 2x"
+            src="./images/tour/Круизы-по-Байкалу.jpg" alt="Круизы по Байкалу"  class="tours-card__img">
             <h3 class="tours-card__title">Круизы по Байкалу</h3>
 
           </a>
@@ -198,9 +276,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/Зимние-туры.jpg 1x,
-            ./images/tour/mobile/Зимние-туры@2x.jpg 2x"
-            src="./images/tour/mobile/Зимние-туры.jpg" alt="Зимние туры">
+            ./images/tour/Зимние-туры.jpg 1x,
+            ./images/tour/Зимние-туры@2x.jpg 2x"
+            src="./images/tour/Зимние-туры.jpg" alt="Зимние туры"  class="tours-card__img">
             <h3 class="tours-card__title">Зимние туры</h3>
 
           </a>
@@ -209,9 +287,9 @@
           <a href="" class="tours-card__link link">
             
             <img srcset="
-            ./images/tour/mobile/О-Байкале.jpg 1x,
-            ./images/tour/mobile/О-Байкале@2x.jpg 2x"
-            src="./images/tour/mobile/О-Байкале.jpg" alt="Карта Байкала">
+            ./images/tour/О-Байкале.jpg 1x,
+            ./images/tour/О-Байкале@2x.jpg 2x"
+            src="./images/tour/О-Байкале.jpg" alt="Карта Байкала"  class="tours-card__img">
             <h3 class="tours-card__title">Карта Байкала</h3>
 
           </a>
@@ -225,44 +303,46 @@
 <section class= directions>
   <div class="container">
     <h2 class=" directions-titles">Основные направления деятельности</h2>
-  <ul class="directions-list ">
+  <ul class="directions-list list">
     <li class="direction-card">
-      <img src="./images/direction/direction1.svg" alt="direction image">
+     
+      <img  src="./images/direction/direction1.svg" alt="direction image" class="direction-img">
+    
       <p class="direction-card__descriprion">Групповые и индивидуальные туры по Байкалу для российских и иностранных туристов</p>
     </li>
 
     <li class="direction-card">
-      <img src="./images/direction/direction2.svg" alt="direction image">
+      <img src="./images/direction/direction2.svg" alt="direction image" class="direction-img">
       <p class="direction-card__descriprion">Экскурсии по городу Улан-Удэ, Республике Бурятия,городу Иркутск</p>
     </li>
 
     <li class="direction-card">
-      <img src="./images/direction/direction3.svg" alt="direction image">
+      <img src="./images/direction/direction3.svg" alt="direction image" class="direction-img">
       <p class="direction-card__descriprion">Услуги гидов-переводчиков на любом иностранном языке</p>
     </li>
 
     <li class="direction-card">
-      <img src="./images/direction/direction4.svg" alt="direction image">
+      <img src="./images/direction/direction4.svg" alt="direction image" class="direction-img">
       <p class="direction-card__descriprion">Круизы и прогулки по Байкалу на теплоходах и катерах</p>
     </li>
 
     <li class="direction-card">
-      <img src="./images/direction/direction5.svg" alt="direction image">
+      <img src="./images/direction/direction5.svg" alt="direction image" class="direction-img">
       <p class="direction-card__descriprion">Профессиональная организация охоты и рыбалки на Байкале</p>
     </li>
 
     <li class="direction-card">
-      <img src="./images/direction/direction6.svg" alt="direction image">
+      <img src="./images/direction/direction6.svg" alt="direction image" class="direction-img">
       <p class="direction-card__descriprion">Аренда автотранспорта для экскурсий и пассажирских перевозок</p>
     </li>
 
     <li class="direction-card">
-      <img src="./images/direction/direction7.svg" alt="direction image">
+      <img src="./images/direction/direction7.svg" alt="direction image" class="direction-img">
       <p class="direction-card__descriprion">Бронирование гостиниц в городе Улан-Удэ и на Байкале</p>
     </li>
 
     <li class="direction-card">
-      <img src="./images/direction/direction8.svg" alt="direction image">
+      <img src="./images/direction/direction8.svg" alt="direction image" class="direction-img">
       <p class="direction-card__descriprion">Организация индивидуальных туров и VIP-туров на Байкале</p>
     </li>
 
@@ -337,7 +417,7 @@
       <li class="offer-card">
         <a class="offer-card__link link" href="#">
           <div class="offer-card__overlay offer-card__overlay_main_gradient"></div>
-          <h3 class="offer-card__title">Показать все предложения</h3>
+          <h3 class="offer-card__title offer-card__title_position_center">Показать все предложения</h3>
           <img srcset="
           ./images/offer/mobile/Все предложения.jpg 1x,
           ./images/offer/mobile/Все предложения @2x.jpg 2x"
@@ -352,20 +432,23 @@
         <section class="map">
           <div class="container">
             <h2 class="map-titles ">Карта Байкала</h2>
-            <img srcset="
+            
+            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d325516.3770455823!2d30.532690549999998!3d50.402035500000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LIsIDAyMDAw!5e0!3m2!1suk!2sua!4v1658130886879!5m2!1suk!2sua" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <img srcset="
           ./images/map/mobile/map.jpg 1x,
-          ./images/offer/mobile/map@2x.jpg 2x"
-          src="./images/offer/mobile/map.jpg" alt="Все предложения">
-          </div>
+          ./images/map/mobile/map@2x.jpg 2x"
+          src="./images/offer/mobile/map.jpg" alt="Карта Байкала">
+          </div> -->
         </section>
 
          <!-- about Baikal -->
-         <section class="about-baikal">
+         <section class="about-baikal"> 
           <div class="container">
-            <h2 class="about-baikal-title"></h2>
-            <p about-baikal-text>Озеро Байкал – глубочайшее и древнейшее озеро планеты. Древние жители Прибайкалья называли его Священным морем и считали, что в Байкале нет дна, обожествляли и наделяли его мистическими свойствами. Именно здесь пронзительные чувства и скрытые способности человека находят выплеск.
+            <h2 class="about-baikal-title">О Байкале</h2>
+            <p class="about-baikal-text" >Озеро Байкал – глубочайшее и древнейшее озеро планеты. Древние жители Прибайкалья называли его Священным морем и считали, что в Байкале нет дна, обожествляли и наделяли его мистическими свойствами. Именно здесь пронзительные чувства и скрытые способности человека находят выплеск.
               Познается что-то новое не только в природе, но и в самом себе. Многие посетившие Байкал люди утверждают, что озеро оказало большое влияние на их дальнейшую жизнь.</p>
-              <button type="button">Читать подробней</button>
+              <a class="about-baikal-link" href="http://">Читать подробней</a>
+              <!-- <button  class="about-baikal-button" type="button">Читать подробней</button> -->
           </div>
          </section>
           <!-- player-->
@@ -379,9 +462,9 @@
   <section class="gallery">
     <div class="container">
       <div class="gallery__header">
-        <h2 class="titles">Фотогаларея</h2>
+        <h2 class="gallery-titles">Фотогалерея</h2>
         <div class="list-manager gallery__list-manager">
-          <a class="list-manager__link link" href="#">Перейти в раздел</a>
+         
           <ul class="list-manager__list list">
             <li class="list-manager__item">
               <button class="list-manager__button" type="button">
@@ -397,12 +480,13 @@
           </ul>
         </div>
       </div>
-      <ul class="galery">
+      <ul class="gallery-list list">
         <li class="gallery-card">
           <img class="gallery-card__img" src="./images/gallery/mobile/Фотогалерея-mobile.jpg" alt="photo Baykal nature" width="288"
           height="210">
         </li>
       </ul>
+      <a class="list-manager__link link" href="#">Перейти в раздел</a>
     </div>
   </section>
 
@@ -435,27 +519,31 @@
                 required></label>
             <label class="form__label-9"><textarea class="form__textarea" name="comment"
                 placeholder="Комментарий"></textarea></label>
-            <button class="form__send-button" type="submit">Отправить заявку</button>
-            <label class="form__checkbox-field">
-              <input type="checkbox" class="form__checkbox" name="conditions" value="conditions" required>
-              <!-- <svg class="form__checkbox-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-check"></use>
-              </svg> -->
-              Согласие на обработку персональных данных
-            </label>
+
+                <label class="form__checkbox-field form__label-10">
+                  <input type="checkbox" class="form__checkbox" name="conditions" value="conditions" required>
+                  <!-- <svg class="form__checkbox-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-check"></use>
+                  </svg> -->
+                  Согласие на обработку персональных данных
+                </label>
+          
+           
           </div>
+          <button class="form__send-button" type="submit">Отправить заявку</button>
         </div>
       </form>
     </div>
   </section>
 <footer class="footer">
+  <div class="container">
   <div class="footer-menu">
     <img src="./images/footer/button-menu-footer.svg" alt="button-menu-footer">
     <p class="footer-menu_title">Меню</p>
 
   </div>
 
-  <img src="./images/footer/line-footer.svg" alt="">
+  <img src="./images/footer/line-footer.svg" alt="" class="line-footer">
 
   <p class="footer-title">Турагентство «Байкальский отдых»</p>
   <small class="footer-copyright ">&copy; 2021. Все права защищены</small>
@@ -470,8 +558,10 @@
    </a>
    <a href=""> <img src="./images/footer/logo-footer.svg" alt="logo-footer" width="52" height="22"></a>
 </div>
-
+</div>
 </footer>
 </main>
+<script src="./node_modules/body-scroll-lock/lib/bodyScrollLock.js"></script>
+<script src="./js/mobile-menu.js"></script>
   </body>
 </html>

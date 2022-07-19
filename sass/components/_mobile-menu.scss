@@ -1,0 +1,84 @@
+.mobile-menu {
+    position: fixed;
+    display: none;
+    top: 72px;
+    left: 0;
+    opacity: 1;
+    width: 100vw;
+    height: 100vh;
+    font-weight: 500;
+    padding: 48px 40px;
+    letter-spacing: 0.02em;
+    background-color: $wite-color;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+    transition: box-shadow $time $cubic;
+    z-index: 10;
+  
+    &.is-open {
+      opacity: 1;
+      display: block;
+      overflow-y: scroll;
+      @media screen and (min-width: $tablet) {
+        display: none;
+      }
+    }
+  }
+
+
+  .mobile-menu__btn {
+    position: relative;
+    top:5px;
+    left: 280px;
+   
+    // display: inline-flex;
+    // align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+
+  .mobile-menu-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 2.38;
+
+    text-transform: uppercase;
+
+    color: #333333;
+  }
+
+  .booking-item{
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 2.38;
+    color: #0050B2;
+  }
+
+  .contacts-nav__item{
+    margin-bottom: 8px;
+    display:flex;
+    align-items: center;
+    &:nth-child(2n){
+        margin-bottom: 8px;
+    }
+  }
+
+  .contact-img{
+    margin-right: 7px;
+  }
+
+  .contacts-nav__link{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.23;
+    
+    color:#000000;
+
+
+  }

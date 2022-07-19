@@ -1,0 +1,47 @@
+.gallery{
+    margin-bottom: 33px
+};
+
+.gallery__header{
+    display: flex;
+    margin-bottom:33px ;
+    align-items: center;
+}
+.gallery-titles{
+    margin-right: 40px;
+  
+   font-weight: 700;
+   font-size: 22px;
+   line-height: 1.32;
+
+    color: #000000;
+};
+
+.list-manager__list{
+    display: flex;
+}
+.list-manager__item:nth-last-child(2n){
+    margin-right: 16px;
+}
+.list-manager__button{
+    border: none;
+    background-color: transparent;
+    }
+
+    .gallery-list{
+        margin-bottom: 32px;
+    }
+
+.list-manager__link{
+
+    font-size: 16px;
+    line-height: 1.19;
+
+
+    text-align: center;
+    text-decoration-line: underline;
+
+    color: #0050B2;
+  
+
+} 
