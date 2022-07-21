@@ -65,6 +65,7 @@ export const galleryItems = [
   ]
 
 const refs = {
+  gallarySection:document.querySelector(".gallery-box-section"),
   galleryContainer: document.querySelector(".js-gallery"),
   modal: document.querySelector(".js-lightbox"),
   overlay: document.querySelector(".lightbox__overlay"),
@@ -72,6 +73,7 @@ const refs = {
   modalCloseBtn: document.querySelector('[data-action="close-lightbox"]'),
   modalImage: document.querySelector(".lightbox__image"),
   modalOpenBtn:document.querySelector(".list-manager__link"),
+
 };
 
 
@@ -100,6 +102,13 @@ function createGalleryItem(items) {
     .join("");
 }
 
+
+
+function createBtn (text){
+
+  return `<button class="form__send-button js-gallery-btn-close" type="submit">${text}</button>`
+}
+
 //  Cоздание галереи на основе разметки
 
 
@@ -107,13 +116,33 @@ function createGalleryItem(items) {
 
 const renderingMarkup = function (markup) {
   refs.galleryContainer.insertAdjacentHTML("beforeend", markup);
+
 };
 
 
 const renderGallery= function(){
     renderingMarkup(createGalleryItem(galleryItems));
+    renderingMarkup(createBtn('Закрыть'));
 }; 
 refs.modalOpenBtn.addEventListener('click', renderGallery);
+
+
+// Закрытие галереи
+
+
+//  document.addEventListener('DOMContentLoaded', callback)
+
+// if (window.onload) {
+//   function closeGallary(e) {
+ 
+//   console.log(e.target.nodeName);
+    
+//   }
+//   refs.closeGalleryBtn.addEventListener('click', closeGallary());
+// } 
+
+
+
 
 //  Открытие модального окна по клику в img
 refs.galleryContainer.addEventListener("click", onOpenModal);

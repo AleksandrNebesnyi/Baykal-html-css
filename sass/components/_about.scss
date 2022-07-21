@@ -32,3 +32,49 @@ color: #000000;
 
     color: #76767A;
 };
+
+.read-more-state {
+    display: none;
+  };
+
+
+  .read-more-target {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0;
+    transition: .25s ease;
+  };
+
+  .read-more-state:checked ~ .about-baikal-text .read-more-target {
+    opacity: 1;
+    font-size: inherit;
+    max-height: 999em;
+  };
+  .read-more-state ~ .read-more-trigger:before {
+    content: 'Читать подробней';
+  };
+  
+  .read-more-state:checked ~ .read-more-trigger:before {
+    content: 'Меньше';
+  };
+
+  .read-more-trigger {
+    cursor: pointer;
+    line-height: 1.14;
+    text-decoration-line: underline;
+
+
+    color: #76767A;
+
+
+
+
+
+    // display: inline-block;
+    // padding: 0 .5em;
+    // color: #666;
+    // font-size: .9em;
+    // line-height: 2;
+    // border: 1px solid #ddd;
+    // border-radius: .25em;
+  };

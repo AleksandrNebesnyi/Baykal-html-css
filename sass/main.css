@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -839,6 +840,40 @@ small {
   color: #76767A;
 }
 
+.read-more-state {
+  display: none;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  -webkit-transition: .25s ease;
+  transition: .25s ease;
+}
+
+.read-more-state:checked ~ .about-baikal-text .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: 'Читать подробней';
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: 'Меньше';
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  line-height: 1.14;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #76767A;
+}
+
 .gallery {
   margin-bottom: 33px;
 }
@@ -854,7 +889,7 @@ small {
 }
 
 .gallery-titles {
-  margin-right: 40px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 22px;
   line-height: 1.32;
@@ -1349,7 +1384,7 @@ nav {
   border: none;
   border-radius: 50%;
   background-color: transparent;
-  color: #fff;
+  color: #000;
   cursor: pointer;
   -webkit-transition: background-color var(--animation-duration) var(--timing-function);
   transition: background-color var(--animation-duration) var(--timing-function);
@@ -1358,6 +1393,7 @@ nav {
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
+  z-index: 100;
 }
 
 .lightbox__button:hover,

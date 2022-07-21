@@ -143,16 +143,16 @@
       <div class="hero__link-btn-container">
         <p class="hero__link-btn link-btn link-btn_uppercase "   data-modal-open>Оставить заявку </p>
       </div>
-      
+      <a href=""></a>
       <a
-        lang="en"
-        href=" "
+        
+        href="#footer"
         class="hero__arrow"
-        rel="noopener noreferrer nofollow"
-        target="_blank"
+        
+        
       >
         <img src="./images/hero/hero-arrow.svg" alt="hero__arrow" />
-      </a>
+    </a>
     </div>
     </section>
 
@@ -445,10 +445,13 @@
          <section class="about-baikal"> 
           <div class="container">
             <h2 class="about-baikal-title">О Байкале</h2>
+            <input type="checkbox" class="read-more-state" id="post-1" />
             <p class="about-baikal-text" >Озеро Байкал – глубочайшее и древнейшее озеро планеты. Древние жители Прибайкалья называли его Священным морем и считали, что в Байкале нет дна, обожествляли и наделяли его мистическими свойствами. Именно здесь пронзительные чувства и скрытые способности человека находят выплеск.
-              Познается что-то новое не только в природе, но и в самом себе. Многие посетившие Байкал люди утверждают, что озеро оказало большое влияние на их дальнейшую жизнь.</p>
-              <a class="about-baikal-link" href="http://">Читать подробней</a>
-              <!-- <button  class="about-baikal-button" type="button">Читать подробней</button> -->
+              Познается что-то новое не только в природе, но и в самом себе. Многие посетившие Байкал люди утверждают, что озеро оказало большое влияние на их дальнейшую жизнь.
+              <span class="read-more-target">Libero fuga facilis vel consectetur quos sapiente deleniti eveniet dolores tempore eos deserunt officia quis ab? Excepturi vero tempore minus beatae voluptatem!</span></p>
+              <label for="post-1" class="read-more-trigger"></label>
+              <!-- <a class="about-baikal-link" href="#">Читать подробней</a> -->
+              
           </div>
          </section>
           <!-- player-->
@@ -485,7 +488,7 @@
         <h2 class="gallery-titles">Фотогалерея</h2>
         <div class="list-manager gallery__list-manager">
          
-          <ul class="list-manager__list list">
+          <!-- <ul class="list-manager__list list">
             <li class="list-manager__item">
               <button class="list-manager__button" type="button">
                 <img src="./images/gallery/button-left.svg" alt="button-left" width="44" height="44">
@@ -497,7 +500,7 @@
                 <img src="./images/gallery/button-right.svg" alt="button-right" width="44" height="44">
               </button>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
       <ul class="gallery-list list">
@@ -506,15 +509,18 @@
           height="210">
         </li>
       </ul>
-      <a class="list-manager__link link " href="#">Перейти в раздел</a>
+      <a class="list-manager__link link " href="#gallery">Перейти в раздел</a>
       
     </div>
   </section>
 
-  <section>
+  <section id="gallery" class="gallery-box-section">
     <div class="container">
          <!-- В этот список добавляй элементы галереи -->
     <ul class="gallery-box js-gallery"></ul>
+    
+    
+  
 
     <!--
       Модальное окно для полноразмерного изображения
@@ -527,12 +533,21 @@
         <img class="lightbox__image" src="" alt="" />
       </div>
 
+
+
+
       <button
         type="button"
         class="lightbox__button"
         data-action="close-lightbox"
-      ></button>
+      >  
+    </button>
+
+   
+
     </div>
+    
+
     </div>
     
   </section>
@@ -556,10 +571,6 @@
                 placeholder="Количество взрослых" required></label>
             <label class="form__label-6"><input class="form__input" type="text" name="children-age"
                 placeholder="Количество детей, их возраст"></label>
-            <!-- <div class="form__dates">
-                                      <label class="form__label"><input class="form__input" type="text" name="date-in" placeholder="Дата заезда" required></label>
-                                      <label class="form__label"><input class="form__input" type="text" name="date-out" placeholder="Дата отъезда" required></label>
-                                  </div> -->
             <label class="form__label-7"><input class="form__input" type="text" name="date-in" placeholder="Дата заезда"
                 required></label>
             <label class="form__label-8"><input class="form__input" type="text" name="date-out" placeholder="Дата отъезда"
@@ -580,7 +591,7 @@
       </form>
     </div>
   </section>
-<footer class="footer">
+<footer  id="footer" class="footer">
   <div class="container">
   <div class="footer-menu">
     <img src="./images/footer/button-menu-footer.svg" alt="button-menu-footer">
@@ -628,10 +639,6 @@
                   placeholder="Количество взрослых" required></label>
               <label class="form__label-6"><input class="form__input" type="text" name="children-age"
                   placeholder="Количество детей, их возраст"></label>
-              <!-- <div class="form__dates">
-                                        <label class="form__label"><input class="form__input" type="text" name="date-in" placeholder="Дата заезда" required></label>
-                                        <label class="form__label"><input class="form__input" type="text" name="date-out" placeholder="Дата отъезда" required></label>
-                                    </div> -->
               <label class="form__label-7"><input class="form__input" type="text" name="date-in" placeholder="Дата заезда"
                   required></label>
               <label class="form__label-8"><input class="form__input" type="text" name="date-out" placeholder="Дата отъезда"
@@ -663,5 +670,6 @@
 <script src="./js/modal.js"></script>
 
 <script src="./js/gallery.js" type="module"></script>
+<script src="./js/close-gallery.js" type="module"></script>
   </body>
 </html>
