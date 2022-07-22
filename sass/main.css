@@ -697,6 +697,7 @@ small {
   display: -ms-grid;
   display: grid;
   gap: 26px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -705,6 +706,7 @@ small {
         grid-template-rows: repeat(12, 1fr);
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30px;
   }
 }
 

@@ -106,18 +106,15 @@ function createGalleryItem(items) {
 
 function createBtn (text){
 
-  return `<button class="form__send-button js-gallery-btn-close" type="submit">${text}</button>`
+  return `<button class="form__send-button js-gallery-btn-close" id="1" >${text}</button>`
 }
 
 //  Cоздание галереи на основе разметки
 
-
-
-
 const renderingMarkup = function (markup) {
   refs.galleryContainer.insertAdjacentHTML("beforeend", markup);
-
 };
+
 
 
 const renderGallery= function(){
@@ -127,7 +124,17 @@ const renderGallery= function(){
 refs.modalOpenBtn.addEventListener('click', renderGallery);
 
 
+
+const galleryCloseBtn=document.getElementById('1');
+console.log("btn",galleryCloseBtn);
+
 // Закрытие галереи
+
+refs.closeGalleryBtn.addEventListener('click', closeGallary());
+
+function closeGallary() {
+   refs.gallarySection.remove();     
+   };
 
 
 //  document.addEventListener('DOMContentLoaded', callback)
@@ -192,7 +199,7 @@ function onEscKeyPress(event) {
 }
 // Переключение картинок в модальном окне клавишами left, right
 const dataSources = galleryItems.map((image) => image.original);
-console.log(dataSources);
+
 
 document.addEventListener("keydown", (e) => {
   const currentIndex = dataSources.indexOf(refs.modalImage.src);
