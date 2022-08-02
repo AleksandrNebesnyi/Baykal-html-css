@@ -1,2 +1,2 @@
 # Baykal-html-css
-Only mobile size.
+<h2>Only mobile size.</h2>
